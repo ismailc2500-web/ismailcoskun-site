@@ -1,0 +1,20 @@
+{
+  "id": "everseed-saga",
+  "title": "The Everseed Saga",
+  "logline": "A tiny apple-headed homebody must carry a whispering golden seed-ring across a world of fruit-headed heroes and rotten horrors before the Charred King wakes.",
+  "tone": "epic fantasy parody told with total cinematic sincerity; the absurdity of fruit-headed heroes is played straight, humour comes from character and understatement",
+  "style_notes": "Original dark-fantasy world. Miniature, tactile environments. Fruit heads are photoreal and anatomically integrated. Warm golden palette for home, cold teal for the wild, infernal orange-red for the enemy.",
+  "settings": {
+    "words_per_minute": 150,
+    "narrator_voice": { "pitch_hz": 98, "openai_voice": "onyx" },
+    "narrator_voice_profile": "deep, warm, cinematic trailer narrator with a dry comedic undertone; unhurried, clear diction, lands punchlines with a tiny pause",
+    "default_tone": "epic-comedic",
+    "intro": { "enabled": false, "duration": 2, "text": "THE EVERSEED SAGA" },
+    "outro": { "enabled": true, "duration": 2, "text": "FOLLOW FOR THE NEXT EPISODE" },
+    "subtitles": { "mode": "word", "burn_in": true, "uppercase": false },
+    "landscape_strategy": "blur",
+    "music": { "mood": "dark-epic", "volume_db": -15, "duck_db": 10 },
+    "finishing": { "film_grain": true, "vignette": true },
+    "hashtags": ["#EverseedSaga", "#FantasyAnimation", "#FruitHeroes"]
+  }
+}

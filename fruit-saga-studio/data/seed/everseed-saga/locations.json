@@ -1,0 +1,68 @@
+[
+  {
+    "id": "greenhollow",
+    "name": "Greenhollow",
+    "environment_type": "village",
+    "description": "a cosy hillside village of giant hollowed gourds and pumpkins turned into homes, round wooden doors, crooked stone chimneys, vegetable gardens, lanterns strung along low fences and rolling orchard hills",
+    "lighting": "warm golden-hour sunlight, soft haze, long gentle shadows",
+    "atmosphere": "peaceful, cosy, pastoral",
+    "visual_details": ["giant gourd houses with round doors", "orchard trees heavy with fruit", "lanterns on fences", "dandelion seeds in the air"],
+    "ambience": "village_ambience",
+    "palette": { "sky": "#f2a65a", "ground": "#4e7a34", "accent": "#ffd27a" }
+  },
+  {
+    "id": "whisperwood",
+    "name": "The Whisperwood",
+    "environment_type": "forest",
+    "description": "an ancient forest of enormous twisted trees with vine-wrapped trunks, bioluminescent blue mushrooms, roots like sleeping serpents and thick drifting fog",
+    "lighting": "cold moonlight shafts cutting through fog, blue-green palette, glowing mushrooms as practical lights",
+    "atmosphere": "eerie, watchful, ancient",
+    "visual_details": ["twisted vine-wrapped trunks", "glowing blue mushrooms", "serpentine roots", "layers of fog"],
+    "ambience": "forest_ambience",
+    "palette": { "sky": "#1f3b3a", "ground": "#132019", "accent": "#6fd6ff" }
+  },
+  {
+    "id": "frostpeel-pass",
+    "name": "Frostpeel Pass",
+    "environment_type": "mountain",
+    "description": "a narrow snowy mountain pass between jagged ice-blue peaks, frozen waterfalls and ancient carved statues half-buried in snow",
+    "lighting": "harsh cold daylight, blowing snow, pale blue shadows",
+    "atmosphere": "brutal, lonely, epic",
+    "visual_details": ["jagged ice peaks", "frozen waterfalls", "half-buried statues", "wind-blown snow"],
+    "ambience": "wind",
+    "palette": { "sky": "#9fb8d6", "ground": "#e6eef7", "accent": "#bfe3ff" }
+  },
+  {
+    "id": "cinderpith",
+    "name": "Mount Cinderpith",
+    "environment_type": "volcanic",
+    "description": "a volcanic wasteland of black glass and ash, rivers of lava, and a jagged tower of charred bramble spiralling into a blood-red sky under falling embers",
+    "lighting": "infernal orange underlighting from lava, red sky, heavy smoke, hard silhouettes",
+    "atmosphere": "oppressive, menacing, apocalyptic",
+    "visual_details": ["charred bramble tower", "rivers of lava", "black volcanic glass", "ember rain"],
+    "ambience": "fire_ambience",
+    "palette": { "sky": "#5a0f0a", "ground": "#140c0c", "accent": "#ff5a1f" }
+  },
+  {
+    "id": "silverleaf-haven",
+    "name": "Silverleaf Haven",
+    "environment_type": "sanctuary",
+    "description": "a hidden elven refuge of pale silver-barked trees, cascading waterfalls, lantern-lit wooden bridges and elegant leaf-shaped pavilions",
+    "lighting": "soft moonlit silver-blue with warm lantern accents and gentle mist",
+    "atmosphere": "serene, ancient, melancholic",
+    "visual_details": ["silver-barked trees", "waterfalls", "lantern-lit bridges", "leaf-shaped pavilions"],
+    "ambience": "water_ambience",
+    "palette": { "sky": "#2b3f5c", "ground": "#1d2a33", "accent": "#e8f0ff" }
+  },
+  {
+    "id": "gloomroot-caves",
+    "name": "The Gloomroot Caves",
+    "environment_type": "cave",
+    "description": "damp twisting caverns beneath the roots of dead trees, dripping stalactites, a black underground pool and heaps of rotten fruit cores",
+    "lighting": "near darkness, a single cold shaft of light, faint green reflections on wet stone",
+    "atmosphere": "claustrophobic, damp, pitiful",
+    "visual_details": ["hanging roots", "dripping stalactites", "black underground pool", "piles of fruit cores"],
+    "ambience": "cave_ambience",
+    "palette": { "sky": "#0d1412", "ground": "#101a14", "accent": "#9be27a" }
+  }
+]

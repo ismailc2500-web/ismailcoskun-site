@@ -1,0 +1,28 @@
+# dependencies
+node_modules/
+
+# next.js
+.next/
+next-env.d.ts
+*.tsbuildinfo
+
+# local environment
+.env
+.env.local
+
+# local database (the JSON mirror in data/series/ is the human-readable backup)
+data/studio.db
+data/studio.db-*
+
+# generated media + content-addressed generation cache
+output/*
+!output/.gitkeep
+cache/
+
+# user-supplied licensed audio (keep the folder + README only)
+data/audio-library/music/*
+data/audio-library/sfx/*
+!data/audio-library/music/.gitkeep
+!data/audio-library/sfx/.gitkeep
+
+.DS_Store

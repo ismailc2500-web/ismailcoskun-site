@@ -1,0 +1,22 @@
+## GLOBAL NEGATIVE PROMPT — merged with each character's negative traits.
+## One item per line.
+fruit emoji
+emoji face
+sticker or clip-art look
+flat 2D cartoon
+cheap toy plastic look
+human head
+human face pasted on fruit
+fruit held in hands instead of being the head
+text, letters, captions, subtitles
+watermark, logo, signature
+modern objects, phones, cars, plastic packaging
+real actor likeness
+movie still recreation
+replica film costumes
+inconsistent costume
+extra limbs, extra fingers, deformed hands
+duplicate characters
+low resolution, blurry, jpeg artifacts
+oversaturated colours
+static flat background

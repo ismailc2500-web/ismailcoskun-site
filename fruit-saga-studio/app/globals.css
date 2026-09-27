@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink-950: #0b0b0f;
+  --color-ink-900: #121218;
+  --color-ink-850: #17171f;
+  --color-ink-800: #1d1d27;
+  --color-ink-700: #2a2a37;
+  --color-ink-600: #3a3a4a;
+  --color-gold-300: #ffd98a;
+  --color-gold-400: #f5b642;
+  --color-gold-500: #e09a1f;
+  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+}
+
+:root {
+  color-scheme: dark;
+}
+
+html,
+body {
+  background: var(--color-ink-950);
+  color: #e7e5e4;
+}
+
+::selection {
+  background: rgba(245, 182, 66, 0.35);
+}
+
+/* Thin, unobtrusive scrollbars for the timeline and editors. */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #3a3a4a transparent;
+}
+
+textarea {
+  field-sizing: content;
+}
