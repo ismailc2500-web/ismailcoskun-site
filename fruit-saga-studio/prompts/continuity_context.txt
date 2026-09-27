@@ -1,0 +1,15 @@
+## How the continuity state is presented to the story engine (injected as {{continuity}}).
+## Variables: {{as_of_episode}} {{current_objective}} {{character_states}} {{relationships}}
+## {{villain_state}} {{unresolved}} {{world_notes}} {{major_events}}
+State after episode {{as_of_episode}}.
+CURRENT OBJECTIVE: {{current_objective}}
+CHARACTERS:
+{{character_states}}
+RELATIONSHIPS: {{relationships}}
+VILLAIN: {{villain_state}}
+UNRESOLVED THREADS:
+{{unresolved}}
+ESTABLISHED WORLD FACTS:
+{{world_notes}}
+MAJOR EVENTS SO FAR:
+{{major_events}}

@@ -1,0 +1,11 @@
+## THUMBNAIL PROMPT (9:16 and 16:9). The title text is overlaid by the app, never rendered by the model.
+## Variables: {{aspect}} {{orientation}} {{concept}} {{characters_block}} {{environment}} {{text_space}} {{style_short}}
+Eye-catching {{orientation}} video thumbnail, {{aspect}}. {{concept}}.
+
+{{characters_block}}
+
+Large, expressive fruit faces filling most of the frame, 1–3 characters maximum, a clear visual conflict between them. Background: {{environment}}, simplified and dark so the faces pop. Dramatic rim lighting, strong contrast, bold simple shapes, minimal clutter, no tiny details, readable at small size.
+
+Leave clean, uncluttered negative space {{text_space}} for a title to be added later — do not render any text, letters or logos.
+
+STYLE: {{style_short}}

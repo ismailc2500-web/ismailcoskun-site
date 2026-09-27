@@ -1,0 +1,34 @@
+{
+  "series_id": "everseed-saga",
+  "as_of_episode": 0,
+  "current_objective": "None yet. Pip Applebrook lives a quiet life in Greenhollow and intends to keep it that way.",
+  "major_events": [
+    { "episode": 0, "event": "Long ago the Everseed, a golden ring grown from a single apple seed, was torn from Malgrath the Charred King and lost." }
+  ],
+  "character_states": {
+    "pip": { "location": "greenhollow", "status": "active", "possessions": ["patched leather satchel"], "injuries": [], "emotional_state": "content, sleepy", "notes": "" },
+    "perriwick": { "location": "unknown roads", "status": "active", "possessions": ["amber-crystal staff"], "injuries": [], "emotional_state": "worried", "notes": "Has been researching the Everseed for years." },
+    "tango": { "location": "greenhollow", "status": "active", "possessions": ["frying pan", "backpack of pots"], "injuries": [], "emotional_state": "cheerful", "notes": "" },
+    "lyssa": { "location": "silverleaf-haven", "status": "active", "possessions": ["white-wood longbow"], "injuries": [], "emotional_state": "watchful", "notes": "" },
+    "borrik": { "location": "frostpeel-pass", "status": "active", "possessions": ["battle axe", "round shield"], "injuries": [], "emotional_state": "restless", "notes": "" },
+    "kael": { "location": "whisperwood", "status": "active", "possessions": ["notched longsword"], "injuries": [], "emotional_state": "guarded", "notes": "Watches the roads for Perriwick." },
+    "malgrath": { "location": "cinderpith", "status": "dormant", "possessions": [], "injuries": ["weakened since losing the Everseed"], "emotional_state": "patient hunger", "notes": "" },
+    "shrivel": { "location": "gloomroot-caves", "status": "hiding", "possessions": ["gnawed apple core"], "injuries": [], "emotional_state": "obsessive longing", "notes": "Once carried the Everseed and was rotted by it." }
+  },
+  "relationships": [
+    { "a": "pip", "b": "tango", "status": "best friends since seedlings" },
+    { "a": "pip", "b": "perriwick", "status": "the wizard is an old family friend" },
+    { "a": "lyssa", "b": "borrik", "status": "old rivals who secretly respect each other" }
+  ],
+  "villain_state": "Malgrath is dormant and weakened in Cinderpith, but can faintly sense the Everseed whenever it glows.",
+  "unresolved_plot_points": [
+    "Where did Perriwick find the Everseed?",
+    "Why has the Everseed started glowing again?"
+  ],
+  "world_notes": [
+    "The Everseed is a golden ring grown from a single apple seed; it whispers, and fruit near it ripens too fast.",
+    "Greenhollow homes are hollowed-out giant gourds.",
+    "Fruit-headed folk fear rot above all else."
+  ],
+  "episode_summaries": []
+}

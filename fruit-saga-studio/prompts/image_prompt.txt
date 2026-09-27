@@ -1,0 +1,17 @@
+## STAGE 3 — KEYFRAME IMAGE PROMPT (one per shot).
+## Order: [character consistency block] + [action] + [environment] + [camera] + [lighting] + [rendering style]
+## Variables: {{characters_block}} {{action}} {{facial_expression}} {{emotion}} {{environment}}
+## {{location_details}} {{camera_framing}} {{lens}} {{composition}} {{lighting}} {{style}} {{aspect}} {{orientation}}
+{{#if characters_block}}{{characters_block}}
+
+{{/if}}ACTION: {{action}}; {{facial_expression}}; mood: {{emotion}}.
+
+ENVIRONMENT: {{environment}}{{#if location_details}}; {{location_details}}{{/if}}.
+
+CAMERA: {{camera_framing}}, {{lens}}, {{composition}}.
+
+LIGHTING: {{lighting}}.
+
+STYLE: {{style}}
+
+FORMAT: {{aspect}} {{orientation}} cinematic frame, single still image, no text, no captions, no watermark.

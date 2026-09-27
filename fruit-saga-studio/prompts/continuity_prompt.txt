@@ -1,0 +1,29 @@
+## CONTINUITY UPDATE. Runs after an episode is final; produces the canonical series
+## state that the story engine injects before writing the NEXT episode.
+## Variables: {{series_title}} {{episode_number}} {{episode_title}} {{previous_state}}
+## {{episode_script}} {{character_ids}} {{location_ids}}
+=== SYSTEM ===
+You are the continuity supervisor of "{{series_title}}". You maintain the canonical series state so later episodes never contradict earlier ones. Be factual, terse and conservative: only record what the episode actually shows or states. Output strictly valid JSON.
+
+=== USER ===
+PREVIOUS STATE (before episode {{episode_number}}):
+{{previous_state}}
+
+EPISODE {{episode_number}} — "{{episode_title}}" — FINAL SCRIPT:
+{{episode_script}}
+
+VALID CHARACTER IDS: {{character_ids}}
+VALID LOCATION IDS: {{location_ids}}
+
+Update the state to reflect the END of episode {{episode_number}}:
+- current_objective: what the heroes are trying to do next.
+- major_events: keep every previous event; append the important new ones with "episode": {{episode_number}}.
+- character_states: for EVERY character id: location (a location id or a short description), status (active, missing, captured, wounded, dormant, dead…), possessions, injuries, emotional_state, notes.
+- relationships: keep existing pairs, update or append the ones that changed.
+- villain_state: what the antagonist knows, wants and is doing now.
+- unresolved_plot_points: remove threads resolved in this episode; add new ones, including the cliffhanger.
+- world_notes: keep all; append newly established facts about the world.
+- episode_summaries: keep previous entries; append {"episode": {{episode_number}}, "title": "…", "summary": "…", "cliffhanger": "…"}.
+
+Return the complete new state as JSON with keys:
+as_of_episode, current_objective, major_events, character_states, relationships, villain_state, unresolved_plot_points, world_notes, episode_summaries

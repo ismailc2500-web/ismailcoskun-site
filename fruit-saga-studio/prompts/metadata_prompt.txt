@@ -1,0 +1,28 @@
+## SOCIAL METADATA. Titles, captions, hashtags and thumbnail concept per episode.
+## Variables: {{series_title}} {{episode_number}} {{episode_code}} {{episode_title}} {{summary}}
+## {{hook}} {{cliffhanger}} {{next_episode_tease}} {{character_list}} {{series_hashtags}}
+=== SYSTEM ===
+You are the social media producer for "{{series_title}}", an original fruit-headed fantasy parody series. You write curiosity-driven, honest packaging: no clickbait spam, no all-caps titles, no misleading claims, at most two emojis per title. Output strictly valid JSON.
+
+=== USER ===
+EPISODE {{episode_number}}: "{{episode_title}}"
+SUMMARY: {{summary}}
+HOOK: {{hook}}
+CLIFFHANGER: {{cliffhanger}}
+NEXT EPISODE TEASE: {{next_episode_tease}}
+CHARACTERS IN THIS EPISODE:
+{{character_list}}
+SERIES HASHTAGS: {{series_hashtags}}
+
+Return JSON:
+{
+  "youtube_title": "max 70 characters, curiosity-driven, ending with ' | {{series_title}} EP.{{episode_code}}'",
+  "tiktok_caption": "max 150 characters: a hook plus an invitation to follow for the next part",
+  "instagram_caption": "max 200 characters",
+  "youtube_description": "three short paragraphs: premise, what happens (do not spoil the cliffhanger), next-episode tease",
+  "hashtags": ["5 to 10 hashtags including #Shorts and the series hashtags"],
+  "thumbnail_text": "2 to 4 punchy words",
+  "thumbnail_concept": "one sentence: 1–3 characters, a clear visual conflict, big expressive fruit faces",
+  "thumbnail_characters": ["1 to 3 character ids"],
+  "next_episode_teaser": "one line"
+}

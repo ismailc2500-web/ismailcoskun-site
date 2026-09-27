@@ -1,0 +1,12 @@
+## STAGE 4 — ANIMATION PROMPT (image-to-video). Movement must always be explicit.
+## Variables: {{summary_sentence}} {{duration}} {{subject_motion}} {{camera_motion}}
+## {{environment_motion}} {{facial_expression}} {{speaking}} {{characters_short}} {{style_short}}
+{{summary_sentence}}
+
+SUBJECT MOTION: {{subject_motion}}.
+CAMERA MOTION: {{camera_motion}}.
+ENVIRONMENT MOTION: {{environment_motion}}.
+FACIAL EXPRESSION: {{facial_expression}}{{#if speaking}}; {{speaking}}{{/if}}.
+SHOT DURATION: {{duration}} seconds, one continuous shot, no cuts.
+{{#if characters_short}}CONSISTENCY: {{characters_short}} — keep fruit-head anatomy, costume and proportions exactly as in the first frame; no morphing, no extra characters.
+{{/if}}STYLE: {{style_short}}; no text, no watermark.
