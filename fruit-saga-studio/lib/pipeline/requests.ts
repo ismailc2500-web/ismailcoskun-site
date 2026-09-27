@@ -1,5 +1,5 @@
 import fs from "node:fs";
-import { FPS, RESOLUTIONS, type RenderMode } from "@/lib/config";
+import { config, FPS, RESOLUTIONS, type RenderMode } from "@/lib/config";
 import type { Character, Episode, Scene, Series } from "@/lib/types";
 import type { ImageProvider, ImageRequest, TTSOptions, TTSProvider, TTSVoiceConfig, VideoProvider, VideoRequest } from "@/lib/ai/types";
 import { getImageProvider, getTTSProvider, getVideoProvider, resolveProvider } from "@/lib/ai/registry";
@@ -54,7 +54,7 @@ export function planKeyframe(scene: Scene, ctx: PromptContext, mode: RenderMode,
       : undefined,
     mockScene:
       provider.name === "mock"
-        ? artSceneFromScene(scene, chars, findLocation(scene.location, ctx), width, height, `MOCK KEYFRAME · ${scene.scene_id} · ${scene.camera_framing}`)
+        ? artSceneFromScene(scene, chars, findLocation(scene.location, ctx), width, height, config.mockLabels ? `MOCK KEYFRAME · ${scene.scene_id} · ${scene.camera_framing}` : undefined)
         : undefined,
   };
   const key = hashKey({ kind: "keyframe", provider: provider.name, model: provider.model, parts: provider.cacheParts(req) });

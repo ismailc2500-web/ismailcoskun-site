@@ -6,7 +6,7 @@
   "style_notes": "Original dark-fantasy world. Miniature, tactile environments. Fruit heads are photoreal and anatomically integrated. Warm golden palette for home, cold teal for the wild, infernal orange-red for the enemy.",
   "settings": {
     "words_per_minute": 150,
-    "narrator_voice": { "pitch_hz": 98, "openai_voice": "onyx" },
+    "narrator_voice": { "pitch_hz": 98, "openai_voice": "onyx", "local_voice": "bm_george" },
     "narrator_voice_profile": "deep, warm, cinematic trailer narrator with a dry comedic undertone; unhurried, clear diction, lands punchlines with a tiny pause",
     "default_tone": "epic-comedic",
     "intro": { "enabled": false, "duration": 2, "text": "THE EVERSEED SAGA" },

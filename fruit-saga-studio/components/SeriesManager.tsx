@@ -133,7 +133,10 @@ function SeriesSettings({ series }: { series: Series }) {
         <Field label="Mock pitch (Hz)">
           <Input type="number" value={st.narrator_voice.pitch_hz ?? ""} onChange={(e) => setSettings({ narrator_voice: { ...st.narrator_voice, pitch_hz: e.target.value ? Number(e.target.value) : undefined } })} />
         </Field>
-        <Field label="Narrator direction" className="md:col-span-4">
+        <Field label="Narrator local voice" hint="e.g. bm_george for Kokoro">
+          <Input value={st.narrator_voice.local_voice ?? ""} onChange={(e) => setSettings({ narrator_voice: { ...st.narrator_voice, local_voice: e.target.value || undefined } })} />
+        </Field>
+        <Field label="Narrator direction" className="md:col-span-3">
           <Input value={st.narrator_voice_profile} onChange={(e) => setSettings({ narrator_voice_profile: e.target.value })} />
         </Field>
       </div>

@@ -20,7 +20,7 @@
     ],
     "negative_traits": ["no human hair", "no human ears", "no green apple", "no bare feet"],
     "voice_profile": "young, earnest, slightly breathless; pitch rises when panicking",
-    "voice": { "pitch_hz": 190, "openai_voice": "fable" },
+    "voice": { "pitch_hz": 190, "openai_voice": "fable", "local_voice": "bm_fable" },
     "reference_images": [],
     "palette": { "primary": "#4f6b3a", "secondary": "#c9a227", "accent": "#e0503a" },
     "locked": false
@@ -46,7 +46,7 @@
     ],
     "negative_traits": ["no pointed hat", "no human nose", "no yellow pear", "no glasses"],
     "voice_profile": "old, resonant and theatrical, with dramatic pauses and a hint of mischief",
-    "voice": { "pitch_hz": 105, "openai_voice": "sage" },
+    "voice": { "pitch_hz": 105, "openai_voice": "sage", "local_voice": "bm_lewis@0.92" },
     "reference_images": [],
     "palette": { "primary": "#7d8288", "secondary": "#4a5a6b", "accent": "#d9a441" },
     "locked": false
@@ -68,7 +68,7 @@
     "visual_traits": ["pots always hang from the backpack", "scarf is always rust orange"],
     "negative_traits": ["no human hair", "no peeled orange", "no visible orange segments"],
     "voice_profile": "warm, rustic and earnest, quick to laugh",
-    "voice": { "pitch_hz": 150, "openai_voice": "coral" },
+    "voice": { "pitch_hz": 150, "openai_voice": "coral", "local_voice": "am_puck" },
     "reference_images": [],
     "palette": { "primary": "#6b6b3a", "secondary": "#b5541c", "accent": "#f89a2c" },
     "locked": false
@@ -90,7 +90,7 @@
     "visual_traits": ["leaf-ears move with emotion", "always carries the longbow", "silver leaf brooch at the collar"],
     "negative_traits": ["no human hair", "no human ears", "no lime", "no sliced lemon"],
     "voice_profile": "cool, clear and measured, faintly amused",
-    "voice": { "pitch_hz": 225, "openai_voice": "shimmer" },
+    "voice": { "pitch_hz": 225, "openai_voice": "shimmer", "local_voice": "bf_emma" },
     "reference_images": [],
     "palette": { "primary": "#8fae8b", "secondary": "#cfd6c4", "accent": "#e9cf2a" },
     "locked": false
@@ -112,7 +112,7 @@
     "visual_traits": ["fibre beard braided with three iron rings", "crack scar on top of the coconut", "axe always within reach"],
     "negative_traits": ["no human beard", "no helmet covering the coconut", "no opened coconut", "no white coconut flesh"],
     "voice_profile": "deep, gravelly and booming, rolls his r's",
-    "voice": { "pitch_hz": 85, "openai_voice": "ash" },
+    "voice": { "pitch_hz": 85, "openai_voice": "ash", "local_voice": "am_fenrir@0.95" },
     "reference_images": [],
     "palette": { "primary": "#5b3a22", "secondary": "#8a2a2a", "accent": "#c58b4a" },
     "locked": false
@@ -134,7 +134,7 @@
     "visual_traits": ["calyx crown always visible on top", "scar over the right eye", "hood usually down"],
     "negative_traits": ["no human hair", "no stubble", "no split pomegranate", "no seeds visible on the face"],
     "voice_profile": "low, calm and weary; uses few words",
-    "voice": { "pitch_hz": 115, "openai_voice": "echo" },
+    "voice": { "pitch_hz": 115, "openai_voice": "echo", "local_voice": "bm_daniel" },
     "reference_images": [],
     "palette": { "primary": "#3b2f28", "secondary": "#2e3b2e", "accent": "#b52a3e" },
     "locked": false
@@ -156,7 +156,7 @@
     "visual_traits": ["single molten slit eye", "ember cracks glow brighter with anger", "smoke rises from the shoulders"],
     "negative_traits": ["no pink dragon fruit", "no bright cheerful colours", "no human face", "no dragon"],
     "voice_profile": "deep, echoing and slow; a whisper layered under a growl",
-    "voice": { "pitch_hz": 70, "openai_voice": "alloy" },
+    "voice": { "pitch_hz": 70, "openai_voice": "alloy", "local_voice": "am_onyx@0.85" },
     "reference_images": [],
     "palette": { "primary": "#1c1216", "secondary": "#3a1a12", "accent": "#ff5a1f" },
     "locked": false
@@ -178,7 +178,7 @@
     "visual_traits": ["always hunched", "eyes reflect light like a cat's", "mutters to himself"],
     "negative_traits": ["no hair", "no smooth fresh passion fruit", "no clothing besides the leaf loincloth"],
     "voice_profile": "raspy, twitchy hissing whisper that cracks into a whine",
-    "voice": { "pitch_hz": 240, "openai_voice": "nova" },
+    "voice": { "pitch_hz": 240, "openai_voice": "nova", "local_voice": "af_nicole@1.05" },
     "reference_images": [],
     "palette": { "primary": "#3e2240", "secondary": "#5b5040", "accent": "#9be27a" },
     "locked": false

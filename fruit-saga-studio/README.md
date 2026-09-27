@@ -118,12 +118,32 @@ API keys are only ever read on the server; the Settings page shows whether a key
 | **LLM** (story, shot list, metadata, continuity) | `mock`, `openai` (Chat Completions, JSON mode — works with OpenAI-compatible servers via `OPENAI_BASE_URL`), `anthropic` (Messages API), `ollama` (free, local) | Output is validated against zod schemas; one automatic repair round if the JSON is invalid. |
 | **Image** (keyframes, thumbnails, reference sheets) | `mock`, `openai` (gpt-image-1; sends character **reference images** through the edits endpoint), `stability` (negative prompt + seed) | Results are cropped to the exact frame using attention-based cropping. |
 | **Video** (image-to-video) | `mock` (animatic), `runway`, `luma`, `kling`, `veo` (Gemini API) | Requests are rounded up to the provider's supported clip lengths; clips are slowed down or held to fit the shot. |
-| **TTS** | `mock`, `openai` (voice direction via `instructions`), `elevenlabs` (**exact word timestamps**), `local` (`say`, espeak-ng, piper) | `TTSProvider.generate(text, voiceConfig, options)` |
+| **TTS** | `mock`, `openai` (voice direction via `instructions`), `elevenlabs` (**exact word timestamps**), `local` (Kokoro, piper, espeak-ng, `say`) | `TTSProvider.generate(text, voiceConfig, options)` |
 
 Provider selection order:
 1. `MOCK_MODE=true`, or **Force mock mode** on the Settings page, always wins.
 2. **Providers & Costs** (Settings page), saved per capability and per mode (preview/final), including model, quality and your own prices.
 3. The environment variables.
+
+### Free neural narration (no API credits)
+
+`scripts/tts/kokoro_tts.py` plugs [Kokoro-82M](https://github.com/thewh1teagle/kokoro-onnx) (Apache-2.0, runs offline on the CPU) into the `local` TTS provider. It sounds much closer to a real narrator than espeak, and costs nothing.
+
+```bash
+python3 -m venv ~/.venvs/kokoro && ~/.venvs/kokoro/bin/pip install kokoro-onnx soundfile
+mkdir -p cache/tts-models && cd cache/tts-models
+curl -LO https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/kokoro-v1.0.onnx
+curl -LO https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/voices-v1.0.bin
+```
+
+```dotenv
+TTS_PROVIDER=local
+PREVIEW_TTS_PROVIDER=local
+# No shell is involved, so use the absolute path to the venv's python
+LOCAL_TTS_COMMAND=/home/you/.venvs/kokoro/bin/python scripts/tts/kokoro_tts.py --voice={voice} --text-file {text_file} --output {output}
+```
+
+Each character's **Local voice** (and the series narrator's) picks the Kokoro voice. Use `bm_george` for a single voice (`a…` American, `b…` British). Use `bm_george+am_onyx` to blend voices, and add `@0.9` to change the speed. The demo cast ships with voices already set: George narrates, Lewis plays Perriwick and Puck plays Tango. To keep free voices with placeholder visuals, set `MOCK_MODE=false` and leave `LLM_PROVIDER`, `IMAGE_PROVIDER` and `VIDEO_PROVIDER` on `mock`.
 
 > ⚠️ The real-provider adapters (Runway, Luma, Kling, Veo, ElevenLabs, Stability, OpenAI, Anthropic, Ollama) are written against each provider's public API documentation. They were **not exercised with live keys** during development, and provider APIs change. Before a full final render, run one preview episode (or one scene) with a new provider. Each adapter is a single small file in `lib/ai/providers/` if something needs adjusting.
 
