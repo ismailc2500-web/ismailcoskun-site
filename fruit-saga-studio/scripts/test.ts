@@ -249,6 +249,7 @@ async function main() {
       saveProviderSetting({ kind: "image", mode: "final", provider: "openai", model: "", quality: "high", pricing: { per_image_high: 2 } });
       const est = estimateEpisode(short.id, "final", ["keyframes"]);
       assert.ok(est.total > config.cost.maxEpisodeBudgetUsd, `estimate ${est.total}`);
+      assert.ok(Math.abs(est.fullPrice - est.total) < 0.001, `nothing cached: full price ${est.fullPrice} must equal ${est.total}`);
       await assert.rejects(runPipeline(short.id, ["keyframes"], { mode: "final" }), BudgetExceededError);
       const r = await runPipeline(short.id, ["keyframes"], { mode: "final", confirmBudget: true, sceneIds: [listScenes(short.id)[0].scene_id] });
       assert.equal(r.status, "partial");

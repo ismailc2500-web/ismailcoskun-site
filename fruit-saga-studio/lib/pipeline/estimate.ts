@@ -131,7 +131,7 @@ export function estimateEpisode(episodeId: number, mode: RenderMode, stages: rea
       if (has("keyframes")) s += planKeyframe(scene, ctx, mode).estimate;
       if (has("clips")) s += planClip(scene, null, clipLength(episode, scenes, index), ctx, mode).estimate;
       if (has("narration")) s += planVoices(scene, series, characters, mode).reduce((a, p) => a + p.estimate, 0);
-      return s;
+      return sum + s;
     }, 0);
   if (mock) notes.push("Mock mode is active: no paid API will be called.");
   if (providers.video.provider === "mock" && has("clips")) notes.push("Video uses the free animatic renderer (camera moves on keyframes).");
